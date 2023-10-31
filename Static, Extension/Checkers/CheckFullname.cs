@@ -10,4 +10,11 @@ internal static class CheckFullname
         }
         return false;
     }
+    public static string Capitalizee(this string fulname)
+    {
+        fulname = fulname.ToLower();
+        string[] words = fulname.Split(' ');
+        fulname = char.ToUpper((words[0])[0])+words[0].Substring(1)+" "+char.ToUpper((words[1])[0]) + words[1].Substring(1);
+        return fulname;
+    }
 }

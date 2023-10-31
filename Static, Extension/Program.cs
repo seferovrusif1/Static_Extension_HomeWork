@@ -9,7 +9,7 @@ namespace Static__Extension
         static void Main(string[] args)
         {
             
-            Console.WriteLine("Write fulname");           string fulname = Console.ReadLine();
+            Console.WriteLine("Write fulname");           string fulname = Console.ReadLine().Capitalizee();
             while (!fulname.CheckFullnamee())
             {
                 Console.WriteLine("Tam adi yeniden daxil edin:");
@@ -28,7 +28,7 @@ namespace Static__Extension
             
 
 
-            Console.WriteLine("Write age");              int age=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Write age");              byte age=Convert.ToByte(Console.ReadLine());
 
 
 

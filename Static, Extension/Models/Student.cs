@@ -6,8 +6,8 @@ internal class Student
     public int Id { get;}
     public string Fullname { get; set; }
     public string GroupNo {get; set;}
-    public int Age { get; set; }
-    public Student(string fulname,string groupname,int age)
+    public byte Age { get; set; }
+    public Student(string fulname,string groupname,byte age)
     {
         _id++;
         Id = _id;
@@ -17,7 +17,7 @@ internal class Student
     }
     public override string ToString()
     {
-        return $"Id:    {Id}\nFullName: {Fullname}\nGroupNo: {GroupNo}\nAge: {Age}";
+        return $"\nId:       {Id}\nFullName: {Fullname}\nGroupNo:  {GroupNo}\nAge:      {Age}";
     }
 }
 
